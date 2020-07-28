@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TossTra</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_search">Map</string>
+    <string name="title_activity_poly">Map</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="cancel">Cancel</string>
+</resources>

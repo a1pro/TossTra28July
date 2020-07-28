@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <com.app.tosstra.activities.PagerContainer
+            android:id="@+id/pager_container3"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+         android:layout_above="@+id/rl_offline"
+            android:clipToPadding="true"
+            android:visibility="gone"
+            android:layout_height="210dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager3"
+                android:clipToPadding="true"
+                android:clipChildren="true"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.app.tosstra.activities.PagerContainer>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_offline_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:text="You are offline"/>
+
+            <TextView
+                android:id="@+id/tvGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_blue"
+                android:textColor="@color/white"
+                android:text="Go"
+                 />
+
+            <TextView
+                android:id="@+id/tv_offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"
+                android:text="You are online"/>
+
+            <TextView
+                android:id="@+id/tvGoOffline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:background="@drawable/rounded_blue_solid"
+                android:textColor="@color/white"
+                android:text="Go offline"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</fragment>
